@@ -12,7 +12,8 @@ client = OpenAI(
 
 # Send request to the model
 response = client.responses.create(
-    model="gpt-5.6-luna",
+    model="gpt-5",
     input="Explain artificial intelligence in simple terms."
 )
 
+print(response.output_text)
